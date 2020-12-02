@@ -65,7 +65,7 @@ function errorHandle(err,req,res,next) {
 app.use(notFound);
 app.use(errorHandle);
 
-port = process.env.port || 4000
+port = process.env.PORT || 4000
 app.listen(port, () => {
   console.log('Web Server is listening at port ', port);
 });
